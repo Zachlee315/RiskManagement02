@@ -1,0 +1,14 @@
+# Project configuration
+general:
+  projectName: 'RiskManagement02'
+  productiveBranch: 'main'
+
+# Stage configuration
+stages:
+  productionDeployment:
+    cfTargets:
+    - org: 'btpkrptn-b0rhe9cm'
+      space: 'cls01'
+      appName: 'RiskManagement02'
+      apiEndpoint: 'https://api.cf.ap12.hana.ondemand.com'
+      credentialsId: 'mycf02'
